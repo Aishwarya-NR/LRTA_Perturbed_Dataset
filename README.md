@@ -2,7 +2,7 @@
 This repository contains the perturbed dataset presented in the paper: A Transparent Neural-Symbolic Reasoning Framework with Modular Supervision for Visual Question Answering (NeurIPS 2020). The zip files contain masked (attribute and relationships) version of the GQA evaluation dataset (https://cs.stanford.edu/people/dorarad/gqa/download.html) . Mask term used is "XXXunknownXXX", the json structure remains the same as the original dataset with an extra field "question_orig" that denotes the original unmasked question
 
 
-# Format:
+# Format
 - attribute_masked_data.zip
   - val_balanced_attribute_masked_questions.json
   - testdev_balanced_attribute_masked_questions.json

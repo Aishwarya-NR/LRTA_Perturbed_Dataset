@@ -1,5 +1,6 @@
 # LRTA_Perturbed_Dataset
-This repository contains the perturbed datasets (val and testdev) presented in the paper: A Transparent Neural-Symbolic Reasoning Framework with Modular Supervision for Visual Question Answering (NeurIPS 2020). The zip files contain masked (attribute and relationships) version of the GQA evaluation dataset. (https://cs.stanford.edu/people/dorarad/gqa/download.html). Mask term used is "XXXunknownXXX", the json structure remains the same as the original dataset with an extra field "question_orig" that denotes the original unmasked question.
+This repository contains the perturbed datasets (val and testdev) presented in the paper- **LRTA: A Transparent Neural-Symbolic Reasoning Framework with Modular Supervision for Visual Question Answering (NeurIPS 2020)**\
+The zip files contain masked (attribute and relationships) version of the GQA evaluation dataset. (https://cs.stanford.edu/people/dorarad/gqa/download.html). Mask term used is "XXXunknownXXX", the json structure remains the same as the original dataset with an extra field "question_orig" that denotes the original unmasked question.
 
 
 # Format

@@ -43,7 +43,8 @@ The zip files contain masked (attribute and relationships) version of the GQA ev
 }
 </pre>
 
-# Code Snippets used for data generation
+# Snippets from data generation code
+The below snippets give a broad overview of the masking procedure used to generate the perturbed datasets, the question mentioned in the functions is a string containing the question text.
 ## Attribute masking
 <pre>
 #ATTRIBUTES is a list of attributes obtained from https://github.com/wenhuchen/Meta-Module-Network/blob/master/Constants.py

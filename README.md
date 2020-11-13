@@ -12,24 +12,31 @@ The zip files contain masked (attribute and relationships) version of the GQA ev
   - testdev_balanced_vrb_prpn_masked_questions.json
 
 # Example entry
+
 <pre>
-'20644644': {
+'20903190': {
     "semantic": [
-        {"operation": "select", "dependencies": [], "argument": "scene"},
-        {"operation": "query", "dependencies": [0], "argument": "room"},
+        {"operation": "select", "dependencies": [], "argument": "person (7)"},
+        {"operation": "filter gender", "dependencies": [0], "argument": "female"},
+        {"operation": "relate", "dependencies": [1], "argument": "train,near,s (-)"},
+        {"operation": "exist", "dependencies": [2], "argument": "?"},
     ],
-    "entailed": ["20644645", "20644643"],
-    "equivalent": ["20644644"],
-    "question": "Which room XXXunknownXXX it ?",
-    "imageId": "n250821",
+    "entailed": [],
+    "equivalent": ["20903190"],
+    "question": "Do you see a train near the XXXunknownXXX person?",
+    "imageId": "n411121",
     "isBalanced": True,
-    "groups": {"global": "room", "local": "02q-room"},
-    "answer": "bedroom",
-    "semanticStr": "select: scene->query: room [0]",
-    "annotations": {"answer": {}, "question": {}, "fullAnswer": {}},
-    "types": {"detailed": "place", "semantic": "global", "structural": "query"},
-    "fullAnswer": "It is a bedroom.",
-    "question_orig": "Which room is it?",
+    "groups": {"global": None, "local": "13-person_train"},
+    "answer": "no",
+    "semanticStr": "select: person (7)->filter gender: female [0]->relate: train,near,s (-) [1]->exist: ? [2]",
+    "annotations": {
+        "answer": {},
+        "question": {"7:9": "7"},
+        "fullAnswer": {"4": "6", "7": "7"},
+    },
+    "types": {"detailed": "existRelSC", "semantic": "rel", "structural": "verify"},
+    "fullAnswer": "No, there is a van near the person.",
+    "question_orig": "Do you see a train near the female person?",
 }
 </pre>
 

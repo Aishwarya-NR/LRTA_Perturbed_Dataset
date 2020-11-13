@@ -12,7 +12,7 @@ The zip files contain masked (attribute and relationships) version of the GQA ev
   - testdev_balanced_vrb_prpn_masked_questions.json
 
 # Example entry
-
+![Alt text](https://github.com/Aishwarya-NR/LRTA_Perturbed_Dataset/blob/main/n411121.jpg?raw=true "Title")
 <pre>
 '20903190': {
     "semantic": [

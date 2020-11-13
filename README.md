@@ -39,7 +39,7 @@ The zip files contain masked (attribute and relationships) version of the GQA ev
 #ATTRIBUTES is a list of attributes obtained from https://github.com/wenhuchen/Meta-Module-Network/blob/master/Constants.py
 MASK_TOKEN = "XXXunknownXXX"
 
-**def mask_attributes(question):**
+def mask_attributes(question):
   for word in question.split(" "):
     if word in ATTRIBUTES:
       masked_question = question.replace(word,MASK_TOKEN) 
@@ -52,7 +52,7 @@ MASK_TYPES = ('VERB', 'PROPN') #verbs and prepostions are masked to capture rela
 pos_tagger = spacy.load("en_core_web_sm") #spacy POS Tagger is used
 MASK_TOKEN = "XXXunknownXXX"
 
-**def mask_relationship(question):**
+def mask_relationship(question):
     tagged_dict = pos_tagger(question)
     masked_question = " ".join([ x.text if x.pos_ not in MASK_TYPES else MASK_TOKEN for x in tagged_dict])
   return masked_question        

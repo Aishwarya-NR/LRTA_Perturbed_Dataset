@@ -59,7 +59,7 @@ def mask_attributes(question):
 
 ## Relationship masking
 <pre>
-MASK_TYPES = ('VERB', 'PROPN') #verbs and prepostions are masked to capture relationships
+MASK_TYPES = ('VERB', 'ADP') #verbs and prepostions are masked to capture relationships
 pos_tagger = spacy.load("en_core_web_sm") #spacy POS Tagger is used
 MASK_TOKEN = "XXXunknownXXX"
 
